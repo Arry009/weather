@@ -1,0 +1,28 @@
+{
+    "name": "overtrue/weather",
+    "description": "A weather SDK",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "King",
+            "email": "782561742@qq.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "phpunit/phpunit": "^7.4",
+        "mockery/mockery": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Overtrue\\Weather\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Overtrue\\Weather\\WeatherServiceProvider"
+            ]
+        }
+    }
+}
